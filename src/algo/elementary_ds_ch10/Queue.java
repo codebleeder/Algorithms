@@ -26,4 +26,8 @@ public class Queue {
         else head++;
         return x;
     }
+
+    public boolean isEmpty(){
+        return arr.length == 0;
+    }
 }
