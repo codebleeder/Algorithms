@@ -13,4 +13,13 @@ public class Util {
 
         }
     }
+
+    public static void printPath(Graph g, Node s, Node v){
+        if (s.key == v.key) System.out.println(s.key);
+        else if (v.parent == null) System.out.println("no path from " + s.key + " to " + v.key + " exists");
+        else {
+            printPath(g, s, v.parent);
+            System.out.println(v.key);
+        }
+    }
 }

@@ -7,7 +7,7 @@ import algo.elementary_ds_ch10.Queue;
 public class BreadFirstSearch {
     private static final int INFINITY = Integer.MAX_VALUE;
 
-    public void bfs(Graph G, Node root){
+    public static void bfs(Graph G, Node root){
         for(Node n: G.nodes){
             n.marked = false;
             n.parent = null;
@@ -33,4 +33,6 @@ public class BreadFirstSearch {
 
         }
     }
+
+
 }

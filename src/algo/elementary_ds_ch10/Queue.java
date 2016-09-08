@@ -1,4 +1,5 @@
 package algo.elementary_ds_ch10;
+import java.lang.Math;
 
 /**
  * Created by sharads on 8/3/2016.
@@ -29,5 +30,6 @@ public class Queue {
 
     public boolean isEmpty(){
         return arr.length == 0;
+
     }
 }
