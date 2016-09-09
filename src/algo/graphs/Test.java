@@ -29,6 +29,8 @@ public class Test {
         Graph g = new Graph(map);
         BreadFirstSearch.bfs(g, g.nodes[1]);
         Util.printPath(g, g.nodes[1], g.nodes[7]);
+        System.out.println("graph: ");
+        Util.printGraph(g);
     }
 
     public static void graphTests(String testCase){

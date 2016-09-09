@@ -9,7 +9,11 @@ public class Util {
     public static void printGraph(Graph G){
         for(int i=0; i<G.nodes.length; i++){
             String sAdjacent = Arrays.toString(G.nodes[i].adjacent);
-            System.out.println(i + ": " + sAdjacent);
+            Node parent = G.nodes[i].parent;
+            String p;
+            if (parent == null) p = "null";
+            else p = Integer.toString(parent.key);
+            System.out.println(i + "(p: " + p  + ", d: " + G.nodes[i].dist + ")" + ": " + sAdjacent);
 
         }
     }
