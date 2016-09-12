@@ -33,6 +33,10 @@ public class Test {
         Util.printGraph(g);
     }
 
+    public static void testDFS(){
+
+    }
+
     public static void graphTests(String testCase){
         switch (testCase){
             case "testGraphPrint":
