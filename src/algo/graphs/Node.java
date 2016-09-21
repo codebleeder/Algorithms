@@ -10,6 +10,8 @@ public class Node {
     public Node parent;
     public int[] adjacent;
 
+    public Node(){}
+
     public Node(int key){
         this.key = key;
         this.marked = false;

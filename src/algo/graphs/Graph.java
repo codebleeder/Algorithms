@@ -16,4 +16,5 @@ public class Graph {
             this.nodes[i].adjacent = map[i];
         }
     }
+
 }
