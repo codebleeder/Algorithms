@@ -8,8 +8,9 @@ public class ListObject {
     public ListObject next;
     public ListObject prev;
 
+
     public ListObject(int key, ListObject next, ListObject prev) {
-        this.key = -1;
+        this.key = key;
         this.next = next;
         this.prev = prev;
     }

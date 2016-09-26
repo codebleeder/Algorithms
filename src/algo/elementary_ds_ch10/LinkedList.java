@@ -6,8 +6,16 @@ package algo.elementary_ds_ch10;
 public class LinkedList {
     private ListObject head;
 
+    // Assumes integer as default key type
     public LinkedList() {
+
         this.head = new ListObject(-1, this.head, this.head);
+        this.head.next = this.head;
+        this.head.prev = this.head;
+    }
+
+    public LinkedList(int headElement) {
+        this.head = new ListObject(headElement, this.head, this.head);
         this.head.next = this.head;
         this.head.prev = this.head;
     }
@@ -21,7 +29,7 @@ public class LinkedList {
 
     public ListObject search(int key) {
         ListObject x = this.head.next;
-        while (x != this.head && x.key != key) {
+        while (x != this.head && x.key != (key)) {
             x = x.next;
         }
         return x;

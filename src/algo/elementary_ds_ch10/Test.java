@@ -39,4 +39,13 @@ public class Test {
         ListObject lo2 = l.search(3);
         l.delete(lo2);
     }
+
+
+    public static void testHashTable(){
+        HashTable h = new HashTable();
+        h.insert("sharad", "nyu");
+        h.insert("surabhi", "bu");
+        System.out.println(h.search("sharad"));
+    }
+
 }
