@@ -3,41 +3,38 @@ package algo.elementary_ds_ch10;
 /**
  * Created by sharads on 8/3/2016.
  */
-public class LinkedList {
-    private ListObject head;
+public class LinkedList<T> {
+    private Node<T> head;
 
-    // Assumes integer as default key type
+    public LinkedList(T headElement) {
+        head = new Node<T>(headElement, null, null);
+        head.next = this.head;
+        head.prev = this.head;
+    }
+
     public LinkedList() {
-
-        this.head = new ListObject(-1, this.head, this.head);
-        this.head.next = this.head;
-        this.head.prev = this.head;
+        this(null);
     }
 
-    public LinkedList(int headElement) {
-        this.head = new ListObject(headElement, this.head, this.head);
-        this.head.next = this.head;
-        this.head.prev = this.head;
+    public void insert(T x) {
+        Node<T> n = new Node(x, this.head, this.head);
+
+        n.next = this.head.next;
+        this.head.next.prev = n;
+        this.head.next = n;
+        n.prev = this.head;
     }
 
-    public void insert(ListObject x) {
-        x.next = this.head.next;
-        this.head.next.prev = x;
-        this.head.next = x;
-        x.prev = this.head;
-    }
-
-    public ListObject search(int key) {
-        ListObject x = this.head.next;
-        while (x != this.head && x.key != (key)) {
-            x = x.next;
+    public Node<T> search(T key) {
+        Node<T> here = this.head.next;
+        while(here != this.head && here.key != key) {
+            here = here.next;
         }
-        return x;
+        return here;
     }
 
-    public void delete(ListObject x) {
+    public void delete(Node<T> x) {
         x.next.prev = x.prev;
         x.prev.next = x.next;
-
     }
 }

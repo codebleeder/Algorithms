@@ -27,7 +27,7 @@ public class Test {
             System.out.println(s.pop());
         }
     }
-
+/*
     public static void testLinkedList() {
         LinkedList l = new LinkedList();
         ListObject lo = new ListObject(1);
@@ -39,7 +39,7 @@ public class Test {
         ListObject lo2 = l.search(3);
         l.delete(lo2);
     }
-
+*/
 
     public static void testHashTable(){
         HashTable h = new HashTable();
