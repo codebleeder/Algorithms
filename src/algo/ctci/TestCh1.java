@@ -60,6 +60,24 @@ public class TestCh1 {
         return f1 && f2 && f3 && !f4;
     }
 
+    public boolean testStringCompression6(){
+        boolean f1 = ch1.stringCompression6("aabcccccaaa").equals("a2b1c5a3");
+        boolean f2 = ch1.stringCompression6("abcd") == "abcd";
+        return f1 && f2;
+    }
+
+    public void testRotateMatrix7(){
+        int[][] m = ch1.rotateMatrix7(new int[][]{{1,2, 3},{4, 5, 6}, {7, 8, 9}});
+        for (int i=0; i<m.length; i++)
+            System.out.println(java.util.Arrays.toString(m[i]));
+    }
+
+    public void testZeroMatrix8(){
+        int[][] m = ch1.zeroMatrix8(new int[][]{{1,2, 3},{4, 5, 6}, {0, 8, 9}});
+
+        for (int i=0; i<m.length; i++)
+            System.out.println(java.util.Arrays.toString(m[i]));
+    }
     public void TestAll(String sTestName){
         switch (sTestName){
             case "isUnique1":
@@ -90,6 +108,19 @@ public class TestCh1 {
             case "oneAway5":
                 if (testOneAway5()) System.out.println("oneAway5: pass!");
                 else System.out.println("oneAway5: Fail!");
+                break;
+
+            case "stringCompression6":
+                if (testStringCompression6()) System.out.println("stringCompression6: pass!");
+                else System.out.println("stringCompression6: Fail!");
+                break;
+
+            case "rotateMatrix7":
+                testRotateMatrix7();
+                break;
+
+            case "zeroMatrix8":
+                testZeroMatrix8();
                 break;
         }
     }

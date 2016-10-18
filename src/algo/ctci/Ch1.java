@@ -98,4 +98,73 @@ public class Ch1 {
 
         return iDiffCount <= 1;
     }
+
+    public String stringCompression6(String s){
+        StringBuilder sb = new StringBuilder();
+        int counter = 0;
+        char[] cS = s.toCharArray();
+        char current = ' ';
+
+        for (int i=0; i<cS.length; i++){
+            if (i == 0) {
+                current = cS[i];
+                //sb.append(current);
+                counter++;
+            }
+
+            else if (current != cS[i]){
+                sb.append(current);
+                sb.append(counter);
+                counter = 1;
+                current = cS[i];
+            }
+            else {
+                counter++;
+            }
+        }
+
+        sb.append(current);
+        sb.append(counter);
+
+        if (sb.length() >= cS.length) return s;
+        else return sb.toString();
+    }
+
+    public int[][] rotateMatrix7(int[][] m){
+        int n = m[0].length;
+        for (int layer = 0; layer < n/2; layer++)
+        {
+            int first = layer;
+            int last = n - 1 - layer;
+            for (int i = first; i < last; i++){
+                int offset = i-first;
+                int tmp = m[first][i];
+                m[first][i] = m[last-offset][first];
+                m[last-offset][first] = m[last][last-offset];
+                m[last][last-offset] = m[i][last];
+                m[i][last] = tmp;
+            }
+        }
+        return m;
+    }
+
+    private int[][] setZero(int[][] m, int row, int col){
+        // set row = 0
+        int[] zeroRow = new int[m[0].length];
+        for (int i=0; i<m[0].length; i++) zeroRow[i]=0;
+        m[row] = zeroRow;
+
+        // set column = 0
+        for (int i=0; i < m.length; i++) m[i][col] = 0;
+        return m;
+    }
+
+    public int[][] zeroMatrix8(int[][] m){
+        for (int i=0; i < m.length; i++){
+            for (int j=0; j < m[0].length; j++){
+                if (m[i][j] == 0) return setZero(m, i, j);
+            }
+        }
+        return m;
+    }
 }
