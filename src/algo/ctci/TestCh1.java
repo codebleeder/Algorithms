@@ -1,5 +1,7 @@
 package algo.ctci;
 
+import algo.Util;
+
 /**
  * Created by Sharad on 9/27/2016.
  */
@@ -72,12 +74,35 @@ public class TestCh1 {
             System.out.println(java.util.Arrays.toString(m[i]));
     }
 
-    public void testZeroMatrix8(){
-        int[][] m = ch1.zeroMatrix8(new int[][]{{1,2, 3},{4, 5, 6}, {0, 8, 9}});
 
-        for (int i=0; i<m.length; i++)
-            System.out.println(java.util.Arrays.toString(m[i]));
+    public boolean testZeroMatrix8(){
+        int[][] m = ch1.zeroMatrix8(new int[][]{{1,2, 0},{4, 5, 6}, {0, 8, 9}});
+        int [][] exp = {{0, 0, 0}, {0, 5, 0}, {0, 0, 0}};
+        boolean flag = true;
+
+        // one-to-one check
+        for (int i=0; i < m.length; i++){
+            for (int j=0; j < m[0].length; j++){
+                if (m[i][j] != exp[i][j]){
+                    flag = false;
+                    break;
+                }
+            }
+            if (flag == false) break;
+        }
+
+        System.out.println("output: ");
+        Util.printMatrix(m);
+        System.out.println("expected: ");
+        Util.printMatrix(exp);
+
+        return flag;
     }
+
+    public boolean testStringRotation9(){
+        return ch1.stringRotation9("waterbottle", "erbottlewat");
+    }
+
     public void TestAll(String sTestName){
         switch (sTestName){
             case "isUnique1":
@@ -120,7 +145,13 @@ public class TestCh1 {
                 break;
 
             case "zeroMatrix8":
-                testZeroMatrix8();
+                if (testZeroMatrix8()) System.out.println("zeroMatrix8: pass!");
+                else System.out.println("zeroMatrix8: fail!");
+                break;
+
+            case "stringRotation9":
+                if (testStringRotation9())System.out.println("stringRotation9: pass!");
+                else System.out.println("stringRotation9: fail!");
                 break;
         }
     }

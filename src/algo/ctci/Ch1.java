@@ -148,23 +148,50 @@ public class Ch1 {
         return m;
     }
 
-    private int[][] setZero(int[][] m, int row, int col){
-        // set row = 0
-        int[] zeroRow = new int[m[0].length];
-        for (int i=0; i<m[0].length; i++) zeroRow[i]=0;
-        m[row] = zeroRow;
 
-        // set column = 0
-        for (int i=0; i < m.length; i++) m[i][col] = 0;
-        return m;
+    private void nullifyRow (int[][] m, int row){
+        for (int i=0; i < m[0].length; i++)
+            m[row][i] = 0;
+    }
+
+    private void nullifyCol (int[][] m, int col){
+        for(int i=0; i<m.length; i++)
+            m[i][col] = 0;
     }
 
     public int[][] zeroMatrix8(int[][] m){
+        boolean[] row = new boolean[m.length];
+        boolean[] col = new boolean[m[0].length];
+
         for (int i=0; i < m.length; i++){
             for (int j=0; j < m[0].length; j++){
-                if (m[i][j] == 0) return setZero(m, i, j);
+                if (m[i][j] == 0) {
+                    row[i] = true;
+                    col[j] = true;
+                }
             }
         }
+
+        // nullify all rows
+        for (int i=0; i < row.length; i++)
+            if (row[i] == true) nullifyRow(m, i);
+
+        // Nullify all columns
+        for (int j=0; j < col.length; j++)
+            if (col[j] == true) nullifyCol(m, j);
+
+
         return m;
+    }
+
+    public boolean stringRotation9(String s1, String s2){
+        if (s1.length() != s2.length()) return false;
+
+        if (s1.length() > 0){
+            String s1s1 = s1 + s1;
+            return s1s1.toLowerCase().contains(s1.toLowerCase());
+        }
+
+        return false;
     }
 }

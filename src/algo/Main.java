@@ -7,6 +7,6 @@ public class Main {
 
     public static void main(String[] args) {
         TestCh1 testCh1 = new TestCh1();
-        testCh1.TestAll("zeroMatrix8");
+        testCh1.TestAll("stringRotation9");
     }
 }
