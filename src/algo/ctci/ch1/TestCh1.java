@@ -1,4 +1,4 @@
-package algo.ctci;
+package algo.ctci.ch1;
 
 import algo.Util;
 

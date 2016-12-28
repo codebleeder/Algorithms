@@ -1,12 +1,12 @@
 package algo;
 
-import algo.elementary_ds_ch10.Test;
-import algo.ctci.TestCh1;
+import algo.ctci.ch2.TestCh2;
 
 public class Main {
 
     public static void main(String[] args) {
-        TestCh1 testCh1 = new TestCh1();
-        testCh1.TestAll("stringRotation9");
+        TestCh2 t = new TestCh2();
+        //System.out.println(t.testPartition4());
+        t.testSumLists5();
     }
 }

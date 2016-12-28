@@ -1,4 +1,4 @@
-package algo.ctci;
+package algo.ctci.ch1;
 
 /**
  * Created by Sharad on 9/27/2016.

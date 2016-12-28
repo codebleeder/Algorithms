@@ -4,7 +4,7 @@ package algo.elementary_ds_ch10;
  * Created by sharads on 8/3/2016.
  */
 public class LinkedList<T> {
-    private Node<T> head;
+    public Node<T> head;
 
     public LinkedList(T headElement) {
         head = new Node<T>(headElement, null, null);
