@@ -86,4 +86,16 @@ public class TestCh2 {
         Node oNode = oListOut.head;
 
     }
+
+    public void testPalindrome6(){
+        Integer[] oArr1 = {6, 1, 7};
+        LinkedList oList1 = u.buildLinkedList(oArr1);
+        boolean f1 = ch2.palindrome6(oList1); // should be false
+        boolean f2 = ch2.palindrome6(null); // should be false
+        Integer[] oArr2 = {7};
+        boolean f3 = ch2.palindrome6(u.buildLinkedList(oArr2)); // should be true
+        boolean f4 = ch2.palindrome6(u.buildLinkedList(new Integer[] {1, 3, 1})); // true
+        boolean f5 = ch2.palindrome6(u.buildLinkedList((new Integer[] {1, 3, 3, 1}))); // true
+        System.out.println("result: " + (!f1 && !f2 && f3 && f4 && f5));
+    }
 }
