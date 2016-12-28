@@ -1,5 +1,6 @@
 package algo.ctci.ch2;
 import java.util.HashSet;
+import java.util.ArrayList;
 
 /**
  * Created by Sharad on 10/23/2016.
@@ -109,5 +110,27 @@ public class Ch2 {
             oNode2 = oNode2.next;
         }
         return oListOut;
+    }
+
+    public boolean palindrome6(LinkedList oList) {
+        if (oList == null) return false;
+
+        Node oNode1 = oList.head;
+        Node oNodeTemp = oList.head;
+        ArrayList<Integer> al = new ArrayList<Integer>();
+
+        while (oNodeTemp != null) {
+            oNode1 = oNodeTemp;
+            oNodeTemp = oNodeTemp.next;
+            al.add(oNode1.data);
+        }
+
+        Integer[] iArr = al.toArray(new Integer[0]);
+        int iLength = iArr.length;
+        for(int i=0; i<iLength; i++) {
+            if (iArr[i] != iArr[iLength-i-1]) return false;
+        }
+        return true;
+
     }
 }
