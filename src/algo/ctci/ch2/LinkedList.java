@@ -6,6 +6,12 @@ package algo.ctci.ch2;
 public class LinkedList {
     public Node head;
 
+    public LinkedList(){};
+    public LinkedList(Node oNode){
+        this.head = oNode;
+    }
+
+
     public void insertNode(int i){
         Node n = new Node(i);
         if (this.head == null) this.head = n;
