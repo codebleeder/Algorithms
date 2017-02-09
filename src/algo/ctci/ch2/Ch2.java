@@ -2,6 +2,8 @@ package algo.ctci.ch2;
 import java.util.HashSet;
 import java.util.ArrayList;
 
+import static java.lang.Math.abs;
+
 /**
  * Created by Sharad on 10/23/2016.
  */
@@ -132,5 +134,102 @@ public class Ch2 {
         }
         return true;
 
+    }
+
+    public boolean palindrome6b(LinkedList oList) {
+        if (oList == null) return false;
+        LinkedList oListTemp =  (LinkedList) oList.cloneL();
+        LinkedList oReversedList = new LinkedList(reverseLinkedList(oListTemp.head));
+        return isEqualLinkedLists(oList, oReversedList);
+    }
+
+    private Node reverseLinkedList(Node oNode) {
+        if (oNode.next == null) return oNode;
+        Node oNode2 = reverseLinkedList(oNode.next);
+        oNode.next.next = oNode;
+        oNode.next = null;
+        return oNode2;
+    }
+
+    private boolean isEqualLinkedLists(LinkedList oList1, LinkedList oList2) {
+        Node oNode1 = oList1.head;
+        Node oNode2 = oList2.head;
+        while (oNode1 != null) {
+            if (oNode1.data != oNode2.data) return false;
+            oNode1 = oNode1.next;
+            oNode2 = oNode2.next;
+        }
+        return oNode1 == null && oNode2 == null;
+    }
+
+
+
+    public Node intersection7(LinkedList ll1, LinkedList ll2) {
+        int iLength1 = getLength(ll1);
+        int iLength2 = getLength(ll2);
+        LinkedList llLong = new LinkedList();
+        LinkedList llShort = new LinkedList();
+        int iDiff = abs(iLength1-iLength2);
+
+        if (iLength1 > iLength2) {
+            llLong = ll1;
+            llShort = ll2;
+        }
+        else if (iLength1 < iLength2) {
+            llLong = ll2;
+            llShort = ll1;
+        }
+        else {
+            llLong = ll1;
+            llShort = ll2;
+        }
+
+        Node n1 = llLong.head;
+        Node n2 = llShort.head;
+        while(iDiff != 0){
+            n1 = n1.next;
+            iDiff--;
+        }
+
+        while(n1 != null){
+            if(n1.equals(n2)) return n1;
+            n1 = n1.next;
+            n2 = n2.next;
+        }
+        return null;
+    }
+
+    private int getLength(LinkedList ll){
+        int iLength = 0;
+        Node x = ll.head;
+        Node y = new Node();
+        while (x != null) {
+            y = x;
+            x = x.next;
+            iLength++;
+        }
+        return iLength;
+    }
+
+    public Node loopDetection8(LinkedList x){
+        Node slowRunner = new Node();
+        Node fastRunner = new Node();
+        slowRunner = x.head;
+        fastRunner = x.head;
+        while (slowRunner != null || fastRunner != null){
+            slowRunner = slowRunner.next;
+            fastRunner = fastRunner.next.next;
+            if (slowRunner == fastRunner) break;
+        }
+
+        if (slowRunner == fastRunner){
+            slowRunner = x.head;
+            while (slowRunner != fastRunner){
+                slowRunner = slowRunner.next;
+                fastRunner = fastRunner.next;
+            }
+            return slowRunner;
+        }
+        else return null;
     }
 }

@@ -62,4 +62,44 @@ public class LinkedList {
             n.next = null;
         }
     }
+
+    public LinkedList cloneL() {
+        LinkedList oList = new LinkedList();
+        try {
+            Node x = this.head;
+            Node y = new Node();
+            while (x != null){
+                y = x;
+                x = x.next;
+                oList.insert(y.data);
+            }
+            return oList;
+        }
+        catch (Exception ex){
+            System.out.println(ex.getMessage());
+        }
+        return oList;
+    }
+
+    public Node getNode(int n){
+        Node x = new Node();
+        x = this.head;
+        int i=0;
+        while (x != null){
+            if (n == i) return x;
+            x = x.next;
+            i++;
+        }
+        return null;
+    }
+
+    public int getLength(){
+        int length=0;
+        Node x = this.head;
+        while(x != null){
+            x = x.next;
+            length++;
+        }
+        return length++;
+    }
 }

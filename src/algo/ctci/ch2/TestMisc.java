@@ -16,7 +16,7 @@ public class TestMisc {
     }
 
     public void testReverseLinkedList2(){
-        Integer[] inputArr = {10, 1, 3, 2};
+        Integer[] inputArr = {6, 1, 7};
         LinkedList oList = u.buildLinkedList(inputArr);
         u.printLinkedList(oList);
         Node oNewHead = m.reverseLinkedList2(oList.head);

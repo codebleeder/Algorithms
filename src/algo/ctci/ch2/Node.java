@@ -12,4 +12,5 @@ public class Node {
     public Node(int n){
         this.data = n;
     }
+
 }
