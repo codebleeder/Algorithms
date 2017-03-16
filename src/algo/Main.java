@@ -12,6 +12,6 @@ public class Main {
        TestCh3 t = new TestCh3();
         boolean b = t.testFixedMultiStack();
         if (b == true) System.out.println("pass!");
-        else System.out.println("fail!"); 
+        else System.out.println("fail!");
     }
 }
