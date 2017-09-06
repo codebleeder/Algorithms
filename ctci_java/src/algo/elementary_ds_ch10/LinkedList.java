@@ -6,6 +6,7 @@ package algo.elementary_ds_ch10;
 public class LinkedList<T> {
     public Node<T> head;
 
+
     public LinkedList(T headElement) {
         head = new Node<T>(headElement, null, null);
         head.next = this.head;
