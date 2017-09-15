@@ -10,6 +10,7 @@ namespace ctci_csharp
     {
         static void Main(string[] args)
         {
+            Ch1_arrays_and_strings.p1_3_test();
         }
     }
 }

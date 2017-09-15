@@ -1,0 +1,6 @@
+C:\Users\sharads\Documents\Visual Studio 2017\Projects\Algorithms\Algorithms\ctci_csharp\ctci_csharp\bin\Debug\ctci_csharp.exe.config
+C:\Users\sharads\Documents\Visual Studio 2017\Projects\Algorithms\Algorithms\ctci_csharp\ctci_csharp\bin\Debug\ctci_csharp.exe
+C:\Users\sharads\Documents\Visual Studio 2017\Projects\Algorithms\Algorithms\ctci_csharp\ctci_csharp\bin\Debug\ctci_csharp.pdb
+C:\Users\sharads\Documents\Visual Studio 2017\Projects\Algorithms\Algorithms\ctci_csharp\ctci_csharp\obj\Debug\ctci_csharp.csprojResolveAssemblyReference.cache
+C:\Users\sharads\Documents\Visual Studio 2017\Projects\Algorithms\Algorithms\ctci_csharp\ctci_csharp\obj\Debug\ctci_csharp.exe
+C:\Users\sharads\Documents\Visual Studio 2017\Projects\Algorithms\Algorithms\ctci_csharp\ctci_csharp\obj\Debug\ctci_csharp.pdb
