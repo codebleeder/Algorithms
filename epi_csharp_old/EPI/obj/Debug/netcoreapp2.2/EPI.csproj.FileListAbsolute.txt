@@ -1,0 +1,11 @@
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp_old\EPI\obj\Debug\netcoreapp2.2\EPI.csproj.CoreCompileInputs.cache
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp_old\EPI\obj\Debug\netcoreapp2.2\EPI.AssemblyInfoInputs.cache
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp_old\EPI\obj\Debug\netcoreapp2.2\EPI.AssemblyInfo.cs
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp_old\EPI\bin\Debug\netcoreapp2.2\EPI.deps.json
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp_old\EPI\bin\Debug\netcoreapp2.2\EPI.runtimeconfig.json
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp_old\EPI\bin\Debug\netcoreapp2.2\EPI.runtimeconfig.dev.json
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp_old\EPI\bin\Debug\netcoreapp2.2\EPI.dll
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp_old\EPI\bin\Debug\netcoreapp2.2\EPI.pdb
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp_old\EPI\obj\Debug\netcoreapp2.2\EPI.dll
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp_old\EPI\obj\Debug\netcoreapp2.2\EPI.pdb
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp_old\EPI\obj\Debug\netcoreapp2.2\EPI.csprojAssemblyReference.cache
