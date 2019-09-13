@@ -1,0 +1,40 @@
+C:\Users\sharads\Documents\Visual Studio 2017\Projects\EPI_in_CSharp\EPI_in_CSharp\bin\Debug\netcoreapp1.1\EPI_in_CSharp.deps.json
+C:\Users\sharads\Documents\Visual Studio 2017\Projects\EPI_in_CSharp\EPI_in_CSharp\bin\Debug\netcoreapp1.1\EPI_in_CSharp.runtimeconfig.json
+C:\Users\sharads\Documents\Visual Studio 2017\Projects\EPI_in_CSharp\EPI_in_CSharp\bin\Debug\netcoreapp1.1\EPI_in_CSharp.runtimeconfig.dev.json
+C:\Users\sharads\Documents\Visual Studio 2017\Projects\EPI_in_CSharp\EPI_in_CSharp\bin\Debug\netcoreapp1.1\EPI_in_CSharp.dll
+C:\Users\sharads\Documents\Visual Studio 2017\Projects\EPI_in_CSharp\EPI_in_CSharp\bin\Debug\netcoreapp1.1\EPI_in_CSharp.pdb
+C:\Users\sharads\Documents\Visual Studio 2017\Projects\EPI_in_CSharp\EPI_in_CSharp\obj\Debug\netcoreapp1.1\EPI_in_CSharp.csprojResolveAssemblyReference.cache
+C:\Users\sharads\Documents\Visual Studio 2017\Projects\EPI_in_CSharp\EPI_in_CSharp\obj\Debug\netcoreapp1.1\EPI_in_CSharp.AssemblyInfo.cs
+C:\Users\sharads\Documents\Visual Studio 2017\Projects\EPI_in_CSharp\EPI_in_CSharp\obj\Debug\netcoreapp1.1\EPI_in_CSharp.dll
+C:\Users\sharads\Documents\Visual Studio 2017\Projects\EPI_in_CSharp\EPI_in_CSharp\obj\Debug\netcoreapp1.1\EPI_in_CSharp.pdb
+C:\Users\sharads\Documents\Visual Studio 2017\Projects\Algorithms\Algorithms\ctci_csharp\EPI_in_CSharp\bin\Debug\netcoreapp1.1\EPI_in_CSharp.deps.json
+C:\Users\sharads\Documents\Visual Studio 2017\Projects\Algorithms\Algorithms\ctci_csharp\EPI_in_CSharp\bin\Debug\netcoreapp1.1\EPI_in_CSharp.runtimeconfig.json
+C:\Users\sharads\Documents\Visual Studio 2017\Projects\Algorithms\Algorithms\ctci_csharp\EPI_in_CSharp\bin\Debug\netcoreapp1.1\EPI_in_CSharp.runtimeconfig.dev.json
+C:\Users\sharads\Documents\Visual Studio 2017\Projects\Algorithms\Algorithms\ctci_csharp\EPI_in_CSharp\bin\Debug\netcoreapp1.1\EPI_in_CSharp.dll
+C:\Users\sharads\Documents\Visual Studio 2017\Projects\Algorithms\Algorithms\ctci_csharp\EPI_in_CSharp\bin\Debug\netcoreapp1.1\EPI_in_CSharp.pdb
+C:\Users\sharads\Documents\Visual Studio 2017\Projects\Algorithms\Algorithms\ctci_csharp\EPI_in_CSharp\obj\Debug\netcoreapp1.1\EPI_in_CSharp.csprojResolveAssemblyReference.cache
+C:\Users\sharads\Documents\Visual Studio 2017\Projects\Algorithms\Algorithms\ctci_csharp\EPI_in_CSharp\obj\Debug\netcoreapp1.1\EPI_in_CSharp.AssemblyInfo.cs
+C:\Users\sharads\Documents\Visual Studio 2017\Projects\Algorithms\Algorithms\ctci_csharp\EPI_in_CSharp\obj\Debug\netcoreapp1.1\EPI_in_CSharp.dll
+C:\Users\sharads\Documents\Visual Studio 2017\Projects\Algorithms\Algorithms\ctci_csharp\EPI_in_CSharp\obj\Debug\netcoreapp1.1\EPI_in_CSharp.pdb
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp\EPI_in_CSharp\bin\Debug\netcoreapp1.1\EPI_in_CSharp.deps.json
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp\EPI_in_CSharp\bin\Debug\netcoreapp1.1\EPI_in_CSharp.runtimeconfig.json
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp\EPI_in_CSharp\bin\Debug\netcoreapp1.1\EPI_in_CSharp.runtimeconfig.dev.json
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp\EPI_in_CSharp\bin\Debug\netcoreapp1.1\EPI_in_CSharp.dll
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp\EPI_in_CSharp\bin\Debug\netcoreapp1.1\EPI_in_CSharp.pdb
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp\EPI_in_CSharp\obj\Debug\netcoreapp1.1\EPI_in_CSharp.csprojAssemblyReference.cache
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp\EPI_in_CSharp\obj\Debug\netcoreapp1.1\EPI_in_CSharp.csproj.CoreCompileInputs.cache
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp\EPI_in_CSharp\obj\Debug\netcoreapp1.1\EPI_in_CSharp.AssemblyInfoInputs.cache
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp\EPI_in_CSharp\obj\Debug\netcoreapp1.1\EPI_in_CSharp.AssemblyInfo.cs
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp\EPI_in_CSharp\obj\Debug\netcoreapp1.1\EPI_in_CSharp.dll
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp\EPI_in_CSharp\obj\Debug\netcoreapp1.1\EPI_in_CSharp.pdb
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp_old\EPI_in_CSharp\bin\Debug\netcoreapp1.1\EPI_in_CSharp.deps.json
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp_old\EPI_in_CSharp\bin\Debug\netcoreapp1.1\EPI_in_CSharp.runtimeconfig.json
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp_old\EPI_in_CSharp\bin\Debug\netcoreapp1.1\EPI_in_CSharp.runtimeconfig.dev.json
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp_old\EPI_in_CSharp\bin\Debug\netcoreapp1.1\EPI_in_CSharp.dll
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp_old\EPI_in_CSharp\bin\Debug\netcoreapp1.1\EPI_in_CSharp.pdb
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp_old\EPI_in_CSharp\obj\Debug\netcoreapp1.1\EPI_in_CSharp.csprojAssemblyReference.cache
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp_old\EPI_in_CSharp\obj\Debug\netcoreapp1.1\EPI_in_CSharp.csproj.CoreCompileInputs.cache
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp_old\EPI_in_CSharp\obj\Debug\netcoreapp1.1\EPI_in_CSharp.AssemblyInfoInputs.cache
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp_old\EPI_in_CSharp\obj\Debug\netcoreapp1.1\EPI_in_CSharp.AssemblyInfo.cs
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp_old\EPI_in_CSharp\obj\Debug\netcoreapp1.1\EPI_in_CSharp.dll
+C:\Users\Sharad_2\Documents\code\Algorithms\epi_csharp_old\EPI_in_CSharp\obj\Debug\netcoreapp1.1\EPI_in_CSharp.pdb

@@ -7,8 +7,7 @@ namespace EPI.Chapter5_Arrays
     public static class Arrays_12_RandomSampling
     {
         public static List<int> RandomSampling(List<int> x, int size)
-        {
-            var sizeGreaterThanHalfOfList = false;
+        {            
             var rnd = new Random();
             for (var i = 0; i < size; i++)
             {

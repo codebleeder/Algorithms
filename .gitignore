@@ -45,3 +45,4 @@ crashlytics.properties
 crashlytics-build.properties
 fabric.properties
 
+/epi_csharp_old/.vs/EPI_in_CSharp

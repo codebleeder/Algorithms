@@ -1,12 +1,12 @@
 ﻿using System;
 
-namespace EPI
+namespace EPI_in_CSharp
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Chapter6_Strings.Strings_02_ConvertBase.Test();
+            
         }
     }
 }

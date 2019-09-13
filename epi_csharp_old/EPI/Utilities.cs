@@ -45,5 +45,12 @@ namespace EPI
             x[index1] = x[index2];
             x[index2] = temp;
         }
+        public static void PrintMatrix(List<List<int>> matrix)
+        {
+            for(var i=0; i<matrix.Count; i++)
+            {
+                PrintList(matrix[i]);
+            }
+        }
     }
 }
