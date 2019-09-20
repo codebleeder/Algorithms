@@ -15,6 +15,15 @@ namespace EPI
             }
             Console.WriteLine("");
         }
+        public static void PrintArray<T>(T[] a)
+        {
+            //Console.WriteLine("");
+            foreach (var e in a)
+            {
+                Console.Write($"{e}, ");
+            }
+            Console.WriteLine("");
+        }
         public static void PrintList(List<int> a)
         {
             //Console.WriteLine("");
