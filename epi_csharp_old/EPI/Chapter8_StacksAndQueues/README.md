@@ -1,0 +1,1 @@
+﻿[Stack class](https://docs.microsoft.com/en-us/dotnet/api/system.collections.stack?view=netcore-2.2)
