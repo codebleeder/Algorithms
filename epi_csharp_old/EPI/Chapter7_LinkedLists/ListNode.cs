@@ -67,5 +67,28 @@ namespace EPI.Chapter7_LinkedLists
             }
             return length;
         }
+        public static int Length(ListNode<T> head, ListNode<T> n)
+        {
+            var length = 0;
+            var current = head; 
+            while (current != n && current != null)
+            {
+                current = current.Next;
+                length++;
+            }
+            if (current == null)
+            {
+                return -1;
+            }
+            return length; 
+        }
+        public static ListNode<int> MoveByK(ListNode<int> head, int k)
+        {
+            while (k-- > 0)
+            {
+                head = head.Next;
+            }
+            return head;
+        }
     }
 }

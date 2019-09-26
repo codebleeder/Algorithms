@@ -13,11 +13,11 @@ namespace EPI.Chapter7_LinkedLists
             
             if (length1 > length2)
             {
-                head1 = MoveByK(head1, length1 - length2);
+                head1 = ListNode<int>.MoveByK(head1, length1 - length2);
             }
             else
             {
-                head2 = MoveByK(head2, length2 - length1);
+                head2 = ListNode<int>.MoveByK(head2, length2 - length1);
             }
             while (head1 != head2 && head1 != null && head2 != null)
             {
@@ -26,14 +26,7 @@ namespace EPI.Chapter7_LinkedLists
             }
             return head1;
         }
-        private static ListNode<int> MoveByK(ListNode<int> head, int k)
-        {
-            while (k-- > 0)
-            {
-                head = head.Next;
-            }
-            return head;
-        }
+        
         public static void Test()
         {
             // non overlapping
@@ -50,8 +43,8 @@ namespace EPI.Chapter7_LinkedLists
             }
 
             // overlapping
-            var nodeToJoin = MoveByK(a1, 1);
-            var commonNode = MoveByK(a2, 1);
+            var nodeToJoin = ListNode<int>.MoveByK(a1, 1);
+            var commonNode = ListNode<int>.MoveByK(a2, 1);
             nodeToJoin.Next = commonNode;
             var res2 = OverlappingNoCycleLists(a1, a2);
             if (res2 != null)
