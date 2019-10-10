@@ -19,6 +19,7 @@ namespace EPI.Chapter8_StacksAndQueues
         public class StackWithMax
         {
             private LinkedList<ElementWithCachedMax> Elements { get; set; }
+            public int Count { get; private set; }
             public StackWithMax()
             {
                 Elements = new LinkedList<ElementWithCachedMax>();
@@ -71,14 +72,17 @@ namespace EPI.Chapter8_StacksAndQueues
         {
             private Stack<MaxWithCount> MaxWithCounts { get; set; }
             private Stack<int> Elements { get; set; }
+            public int Count { get; set; }
             public StackWithMax2()
             {
                 MaxWithCounts = new Stack<MaxWithCount>();
                 Elements = new Stack<int>();
+                Count = 0;
             }
             public void Push(int x)
             {
                 Elements.Push(x);
+                Count++;
                 if (MaxWithCounts.Count == 0)
                 {
                     MaxWithCounts.Push(new MaxWithCount(x, 1));
@@ -113,6 +117,7 @@ namespace EPI.Chapter8_StacksAndQueues
                     topMax2.Count -= 1;
                     MaxWithCounts.Push(topMax2);
                 }
+                Count--;
                 return Elements.Pop();
             }
             public int Max()
