@@ -61,5 +61,15 @@ namespace EPI
                 PrintList(matrix[i]);
             }
         }
+        public static void PrintLinkedList<T>(LinkedList<T> l)
+        {
+            Console.WriteLine("");
+            var current = l.First;
+            while (current != null)
+            {
+                Console.Write($"{current.Value} -> ");
+                current = current.Next;
+            }
+        }
     }
 }
