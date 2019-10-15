@@ -40,6 +40,10 @@ namespace EPI.Chapter10_Heaps
             Sink(1);
             return keyMin;
         }
+        public override T Peek()
+        {
+            return Data[1];
+        }
         private bool More(int i, int j)
         {
             if (i > j && i >= Data.Count)

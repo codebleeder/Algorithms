@@ -79,5 +79,10 @@ namespace EPI.Chapter10_Heaps
                 k = j;
             }
         }
+
+        public override T Peek()
+        {
+            return Data[1];
+        }
     }
 }

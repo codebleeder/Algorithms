@@ -22,6 +22,7 @@ namespace EPI.Chapter10_Heaps
         public abstract void Enqueue(T item);
         public abstract T Dequeue();
         public abstract List<T> GetData();
+        public abstract T Peek();
     }
     
     public static class TestPriorityQueue
