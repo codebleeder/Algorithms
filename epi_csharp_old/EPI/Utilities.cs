@@ -42,6 +42,15 @@ namespace EPI
             }
             Console.WriteLine("");
         }
+        public static void PrintCollection<T>(IEnumerator<T> iter)
+        {
+            var sb = new StringBuilder();
+            while (iter.MoveNext())
+            {
+                sb.Append($"{iter.Current}, ");
+            }
+            Console.WriteLine(sb.ToString());
+        }
         public static void Swap(List<int> x, int index1, int index2)
         {
             var temp = x[index1];
