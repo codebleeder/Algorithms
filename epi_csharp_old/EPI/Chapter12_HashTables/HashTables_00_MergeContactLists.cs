@@ -47,7 +47,18 @@ namespace EPI.Chapter12_HashTables
         }
         public override int GetHashCode()
         {
-            return new HashSet<string>(Names).GetHashCode();
+            // Note: Hashcodes for sets with same values and ordered differently return same value in Java
+            // But, that's not the case in c#. Therefore strings are added individually 
+            var hs = new HashSet<string>(Names);
+            var hashCode = 0;
+            foreach (var v in hs)
+            {
+                hashCode += v.GetHashCode();
+            }
+            return hashCode;
+            
+            // following line will work in Java
+            // return new HashSet<string>(Names).GetHashCode();
         }
     }
 }
